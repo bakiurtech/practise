@@ -35,3 +35,8 @@ console.log("\n");
 const sortedUsers = sortedArr.map(user => user.name);
 console.log(sortedUsers);
 console.log("\n");
+
+
+// printing in a single string 
+const singleString = sortedUsers.join(" ");
+console.log(singleString);
