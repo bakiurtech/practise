@@ -1,0 +1,3 @@
+hello frontend 3 -- changing same line from different branch!
+conflict-test: from main
+conflict-test: testing from feat/my-branch branch
