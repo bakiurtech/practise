@@ -16,7 +16,7 @@ export type Address = {
 // user type
 export type User = {
     id: string,
-    name: string,
+    name?: string,
     phone?: string,
     role: Role,
     address: Address
