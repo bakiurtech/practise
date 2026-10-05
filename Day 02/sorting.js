@@ -40,3 +40,8 @@ console.log("\n");
 // printing in a single string 
 const singleString = sortedUsers.join(" ");
 console.log(singleString);
+console.log("\n");
+
+
+// sorting desc sortedUsers array with name
+console.log(sortedUsers.toSorted((a,b) => b.localeCompare(a)));
