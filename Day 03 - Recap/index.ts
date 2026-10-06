@@ -157,3 +157,16 @@ console.log(rollDice());
 console.log(rollDice());
 console.log(rollDice());
 console.log(rollDice());
+
+console.log("\n");
+
+
+// practise with another function
+function getLength(params: string | string[]): number{
+    return params.length;
+}
+
+let fruits: string[] = ["apple", "banana"];
+
+console.log(getLength("test"));
+console.log(getLength(fruits));

@@ -66,3 +66,11 @@ console.log(rollDice());
 console.log(rollDice());
 console.log(rollDice());
 console.log(rollDice());
+console.log("\n");
+// practise with another function
+function getLength(params) {
+    return params.length;
+}
+let fruits = ["apple", "banana"];
+console.log(getLength("test"));
+console.log(getLength(fruits));
