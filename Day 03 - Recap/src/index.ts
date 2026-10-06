@@ -201,4 +201,41 @@ console.log(myCar);
 
 
 
+// Class
+class PersonX {
+    private name: string;
+
+    public constructor(name: string){
+        this.name = name;
+    }
+
+    public getName(): string{
+        return this.name;
+    }
+}
+
+
+let newPerson = new PersonX("baki");
+console.log(newPerson.getName());
+// console.log(newPerson.name); this will give error because we cant access private instance of the class
+
+
+
 // generic
+// if we dont know the type of the incoming params but cant use any
+
+function genFunc<T>(param: T): T{
+    return param;
+}
+console.log(genFunc("bangladesh"));
+
+
+// universal type array length
+
+function findLength<T>(arg: T[]): void{
+    console.log(arg.length);
+}
+
+
+findLength(["hello", 3, 5]);
+findLength(["hello", undefined, 5, true]);

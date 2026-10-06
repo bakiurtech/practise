@@ -79,3 +79,27 @@ const myCar = {
     fuel: "petrol"
 };
 console.log(myCar);
+// Class
+class PersonX {
+    name;
+    constructor(name) {
+        this.name = name;
+    }
+    getName() {
+        return this.name;
+    }
+}
+let newPerson = new PersonX("baki");
+console.log(newPerson.getName());
+// generic
+// if we dont know the type of the incoming params but cant use any
+function genFunc(param) {
+    return param;
+}
+console.log(genFunc("bangladesh"));
+// universal type array length
+function findLength(arg) {
+    console.log(arg.length);
+}
+findLength(["hello", 3, 5]);
+findLength(["hello", undefined, 5, true]);
