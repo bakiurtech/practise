@@ -146,4 +146,14 @@ console.log(myData);
 
 
 
-// 
+// practising with a function now which rollDice
+type NumOnDice = 1 | 2 | 3 | 4 | 5 | 6;
+
+function rollDice(): number{
+    return Math.floor(Math.random()*6 + 1) as NumOnDice;
+}
+
+console.log(rollDice());
+console.log(rollDice());
+console.log(rollDice());
+console.log(rollDice());
