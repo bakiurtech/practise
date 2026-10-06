@@ -74,3 +74,8 @@ function getLength(params) {
 let fruits = ["apple", "banana"];
 console.log(getLength("test"));
 console.log(getLength(fruits));
+const myCar = {
+    name: "toyota",
+    fuel: "petrol"
+};
+console.log(myCar);
