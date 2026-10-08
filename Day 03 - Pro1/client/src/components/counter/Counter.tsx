@@ -38,13 +38,19 @@ export function Counter() {
     return (
         <div className="flex flex-col justify-center items-center">
             <div className="flex justify-between items-center gap-(--gap)">
-                <Button variant={step === 1 ? "active" : "default"} onClick={() => handleStepChange(1)}>+1</Button>
+                <Button 
+                className={step !== 1 ? "opacity-35" : ""} 
+                onClick={() => handleStepChange(1)}>+1</Button>
                 
-                <Button variant={step === 5 ? "active" : "default"} onClick={() => handleStepChange(5)}>+5</Button>
+                <Button 
+                className={step !== 5 ? "opacity-35" : ""}  
+                onClick={() => handleStepChange(5)}>+5</Button>
                 
-                <Button variant={step === 10 ? "active" : "default"} onClick={() => handleStepChange(10)}>+10</Button>
+                <Button 
+                className={step !== 10 ? "opacity-35" : ""} 
+                onClick={() => handleStepChange(10)}>+10</Button>
                 
-                <Button variant="active" onClick={handleReset}>Reset</Button>
+                <Button onClick={handleReset}>Reset</Button>
             </div>
             <h1 className="text-8xl p-5 font-extrabold tracking-tight my-5">{counter.value}</h1>
 

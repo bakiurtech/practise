@@ -1,5 +1,5 @@
 // button types
-type ButtonVariant = "default" | "active" | "counting";
+type ButtonVariant = "default" | "counting";
 
 // size of the button
 type ButtonSize = "sm" | "md" | "cr";
@@ -17,8 +17,7 @@ type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
 
 // style for button variant
 const VARIANT_CLASS: Record<ButtonVariant, string> = {
-  default: "bg-(--btn-col) rounded-2xl font-semibold opacity-35",
-  active: "bg-(--btn-col) rounded-2xl font-semibold",
+  default: "bg-(--btn-col) rounded-2xl font-semibold",
   counting: "bg-(--btn-ctn-col)",
 };
 
