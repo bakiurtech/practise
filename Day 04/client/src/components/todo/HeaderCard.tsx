@@ -24,7 +24,7 @@ export function HeaderCard({ todoList }: Props) {
   return (
     <div className="flex justify-between items-center w-full h-30 gap-2.5 select-none">
       <div className="h-full w-15 rounded-full bg-(--cal-col) flex flex-col justify-start items-center p-0.5">
-        <span className="flex-1 flex justify-center items-center text-xl font-semibold bg-(--bg-sec-col) w-full aspect-square rounded-full">
+        <span className="flex-1 flex justify-center items-center text-2xl font-semibold bg-(--bg-sec-col) w-full aspect-square rounded-full">
           {day}
         </span>
         <span className="w-full aspect-square rounded-full flex justify-center items-center text-(--bg-sec-col)/80 text-xl tracking-tighter">
