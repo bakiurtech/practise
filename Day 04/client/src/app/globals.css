@@ -3,13 +3,17 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --bg-sec-col: #252525;
+  --inp-border-col: #252525;
+  --btn-icon-col: #252525;
+  --btn-cta-col: #ebb539;
+  --cal-col: #ebb539;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-outfit);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,12 +23,13 @@
     --bg-sec-col: #252525;
     --inp-border-col: #252525;
     --btn-icon-col: #252525;
-    --btn-cta-col: #6947d1;
+    --btn-cta-col: #ebb539;
+    --cal-col: #ebb539;
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-outfit), sans-serif;
 }
