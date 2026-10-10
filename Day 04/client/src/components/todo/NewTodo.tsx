@@ -17,14 +17,14 @@ export function NewTodo({ onAdd }: Props) {
     }
 
     return (
-        <form onSubmit={handleSubmit} className="w-full h-12 flex justify-between items-center gap-2.5 mb-7.5">
+        <form onSubmit={handleSubmit} className="w-full h-12 flex justify-between items-center gap-2.5 select-none">
             <input
                 type="text"
                 name="todoInput"
                 id="todoInput"
                 value={text}
                 onChange={(e) => setText(e.target.value)}
-                placeholder="What's needs to do?"
+                placeholder="What to do?"
                 className="outline-none border-2 border-(--inp-border-col) flex flex-1 rounded-2xl px-2.5 h-full"
             />
 

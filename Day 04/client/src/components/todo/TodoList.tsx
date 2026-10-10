@@ -9,7 +9,7 @@ type Props = {
 
 export function TodoList({ todoList, onToggle, onDelete }: Props) {
     return (
-        <div className="flex flex-col justify-center items-center gap-2.5">
+        <div className="flex flex-col justify-center items-center gap-2.5 w-full">
             {todoList.map((todo) => (
                 <TodoCard
                     key={todo.id}

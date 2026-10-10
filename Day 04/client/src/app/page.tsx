@@ -1,5 +1,6 @@
 "use client";
 
+import { HeaderCard } from "@/components/todo/HeaderCard";
 import { NewTodo } from "@/components/todo/NewTodo";
 import { TodoList } from "@/components/todo/TodoList";
 import { useState } from "react";
@@ -29,7 +30,8 @@ export default function Home() {
 
   return (
     <div className="w-full">
-      <main className="max-w-lg w-full mx-auto py-7.5">
+      <main className="max-w-lg w-full mx-auto py-7.5 flex flex-col justify-center items-center gap-7.5">
+        <HeaderCard todoList={todoList}/>
         <NewTodo onAdd={handleAdd} />
         <TodoList
           todoList={todoList}
